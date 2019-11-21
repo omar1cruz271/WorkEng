@@ -59,6 +59,14 @@ class Inicio extends CI_Controller {
       $this->load->view('footer/footer');
     } else header("Location: ". base_url()); # Si la sesion esta activa no puedes acceder al registro
   }
+  public function registroEmpresa(){
+    $dato = $this->session->userdata('login');
+    if (!($dato == 1 || $dato == 2)) {
+      $this->load->view('headers/header');
+      $this->load->view('registroEmpresa');
+      $this->load->view('footer/footer');
+    } else header("Location: ". base_url()); # Si la sesion esta activa no puedes acceder al registro
+  }
   public function login(){
     $dato = $this->session->userdata('login');
     if (!($dato == 1 || $dato == 2)) {
@@ -100,6 +108,7 @@ class Inicio extends CI_Controller {
     $dato = $this->session->userdata('login');
     $n = array('name' => $this->session->userdata('nombre'));
     $justName= explode(" ",$n["name"]);
+    $ncompleto=$n["name"];
     $n["name"] = $justName[0];
     print_r("Hola este es el nombre ");
     if ($dato == 1 || $dato == 2) {
@@ -140,7 +149,7 @@ class Inicio extends CI_Controller {
       );
       $data = array();
       $data["imagen"] = $array_urls[$nombre_imagen];
-      $data["nombreP"]= $n;
+      $data["nombreP"]= $ncompleto;
     $this->load->view('enviarPostales',$data);
     $this->load->view('footer/footer');
   }
