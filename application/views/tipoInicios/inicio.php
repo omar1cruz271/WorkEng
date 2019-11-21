@@ -1,48 +1,56 @@
 </div>
+
 <main class="page landing-page">
-    <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image4.jpg&quot;);color:rgba(236, 255, 216,.4);">
+    
+    <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image1.jpg&quot;);color:rgba(0,0,0,.6);">
         <div class="text">
-            <h2>Bienvenido a iPostal.</h2>
-            <p>Mandar postales a tus conocidos, nunca fue tan fácil. Únete al equipo de iPostal y comienza a crear tus propias postales.</p><a class="btn btn-outline-light" href="<?php base_url(); ?>registro">Empieza ahora</a></div>
-    </section>
+            <br>
+                <i><h1>¡BIENVENIDO!</h1></i>
+            </br>
+            <p>Inicia sesión para empezar con esta aventura.</p>
+            <form action="POST"><button class="btn btn-outline-light btn-lg" type="button"  onclick=" location.href='<?php base_url(); ?>login'">Empieza ahora</button></div>
+            </form>
+        </section>
+    
+    
     <section class="clean-block clean-info dark">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">¿Ya tienes cuenta?</h2>
-                <p>Inicia sesión para gozar de todos los beneficios que te ofrece iPostal.</p>
+                <h2 class="text-info">Información.</h2>
+                <p>WorkEng es un sitio que te ayudara a encontrar empleo o empleados de una manera muy sencilla. </p>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-6"><img class="img-thumbnail" src="assets/img/scenery/login.png"></div>
+                <div class="col-md-6"><img class="img-thumbnail" src="assets/img/oferta.jpg"></div>
                 <div class="col-md-6">
-                    <h3>Lorem impsum dolor sit amet</h3>
+                    <h3 class="text-info">¡Únete a nosotros!</h3>
                     <div class="getting-started-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div><a class="btn btn-outline-primary btn-lg" href="<?php base_url(); ?>login">Iniciar sesi&oacute;n</a></div>
+                        <p>Podrás encontrar a tu mejor empleado</p>
+                    </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button></div>
             </div>
         </div>
     </section>
-    <section class="clean-block features">
+    <section id=sect1 class="clean-block features">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Características de iPostal</h2>
-                <p>Empieza a crear tu propia postal ahora mismo.</p>
+                <h2 class="text-white">Registrate y conoce los beneficios</h2>
+                <p>Empieza en el mundo laboral o incrementa el valor humano de tu empresa</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-5 feature-box"><i class="icon-star icon"></i>
-                    <h4>Elige tu postal favorita</h4>
-                    <p>Tenemos una amplia gama de postales a escoger. Podrás elegir entre postales de amor y amistad, halloween, navidad, entre otras.&nbsp;</p>
+                <div class="col-md-5 feature-box"><i class="icon-star icon "></i>
+                    <h4>Elige el trabajo o trabajor que buscas</h4>
+                    <p>Tenemos una amplia gama de talento Politécnico, así como un extenso surtido de empresas que buscan de ello</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
-                    <h4>Manda tu postal vía Email o Whatsapp</h4>
-                    <p>iPostal te permite mandar tu postal directamente al WhatsApp del destinatario. O bien a su correo electrónico.</p>
+                    <h4>Agenda trabajos via Email o Whatsapp</h4>
+                    <p>WorkEng te permite Contactar con la empresa y sobre ello esta se comunica contigo por el medio que desees, adaptandose a las nuevas tecnologías</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
-                    <h4>Añade texto personalizado</h4>
-                    <p>Dale tu propio estilo al mensaje. Elige el color, tamaño y tipo de letra que usarás en el mensaje de tu postal.</p>
+                    <h4>Empresas a la vanguardia de conocimientos</h4>
+                    <p>Si eres empreza personaliza tu estilo de empleados requeridos, por outsourcing, medio tiempo o tiempo completo</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
-                    <h4>Mira las más usadas</h4>
-                    <p>Echa un vistazo a las postales más usadas del sitio.</p>
+                    <h4>Mantente actualizado sobre puestos de trabajo</h4>
+                    <p>Echa un vistazo a las nuevas ofertas, desarrolate en el ambiente que más te guste</p>
                 </div>
             </div>
         </div>
@@ -50,15 +58,15 @@
     <section class="clean-block slider dark">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Slider</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                <h2 class="text-info">Empresas</h2>
+                <p>"El fundamento de cada empresa es el talento humano"</p>
             </div>
             <div class="carousel slide" data-ride="carousel" id="carousel-1">
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/scenery/image1-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image4-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image2-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image3-scroll.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/factureras/em/vol.png" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/tecnologia/microsoft.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/mercado/sams.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/servicios/banco.jpg" alt="Slide Image"></div>
                 </div>
                 <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
                         data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
@@ -71,18 +79,18 @@
             </div>
         </div>
     </section>
-    <section class="clean-block about-us">
+    <section id="sect2" class="clean-block about-us">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Acerca de nosotros</h2>
+                <h2 class="text-white">Acerca de nosotros</h2>
                 <p>Encuentra información acerca de cada uno de los desarrolladores</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Carlos Cobi&aacute;n</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Sandra Calderón</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Mecanica</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
@@ -90,8 +98,8 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Omar Cruz</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Omar Cruz</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Sistemas Cmputacionales.</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
@@ -99,13 +107,16 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Rodrigo Garc&iacute;a</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Karen Cruz</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Comunicaciones y eletrónica.</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
                 </div>
+                
+
             </div>
         </div>
     </section>
 </main>
+</body>

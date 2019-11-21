@@ -1,29 +1,26 @@
 <div class="myBtnContainer chapternav-category">
       <div class="chapternav-items">
         <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/todas.png">
+        <i class="fas fa-hand-point-right"></i>
           <a class="a todas" id="showAll" onclick="filterSelection('all')" href=>Todas</a>
         </li>
         <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/invitacion.png">
-          <a class="a invitacion" id="showInv" onclick="filterSelection('invitacion')" href="#">Invitaci&oacute;n</a>
+          <i class="fas fa-industry"></i>
+          <a class="a invitacion" id="showInv" onclick="filterSelection('invitacion')" href="#">Manufactureras</a>
         </li>
         <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/amor.png">
-          <a class="a amor" id="showAmor" onclick="filterSelection('amor')" href="#">Amor</a>
+        <i class="fas fa-taxi"></i>
+          <a class="a amor" id="showAmor" onclick="filterSelection('amor')" href="#">Servicios</a>
         </li>
         <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/amistad.png">
-          <a class="a amistad" id="showAmistad" onclick="filterSelection('amistad')" href="#">Amistad</a>
+        <i class="fas fa-shopping-basket"></i>
+          <a class="a amistad" id="showAmistad" onclick="filterSelection('amistad')" href="#">Mercado</a>
         </li>
         <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/cumpleanos.png">
-          <a class="a cumpleanos" id="showCumple" onclick="filterSelection('cumpleanos')" href="#">Cumplea&ntilde;os</a>
+        <i class="fas fa-microchip"></i>
+          <a class="a cumpleanos" id="showCumple" onclick="filterSelection('cumpleanos')" href="#">Tecnologías</a>
         </li>
-        <li class="chapternav-item">
-          <img src="https://gusanito.com/v5img/img/category_icons/color/saludos.png">
-          <a class="a saludos" id="showSaludos" onclick="filterSelection('saludos')" href="#">Saludos</a>
-        </li>
+        
       </div>
     </div>
 </div>
@@ -32,9 +29,9 @@
     <section class="clean-block clean-gallery dark">
         <div class="container">
             <div class="block-heading" style="padding-top: 140px;">
-                <h2 class="text-info">Postales</h2>
-                <p>Elige la postal que más te agrade. Exiten diferentes categorías que se acomodan a lo que necesitas.&nbsp;</p>
-            </div>
+            <h2 class="text-info">EMPRESAS</h2>
+                    <p>Elige la empresa que más te agrade para obtener información sobre ella y sobre sus trabajos</p>
+                </div>
             <div class="row" id="images">
               <div class="col-md-6 col-lg-4 item filterDiv amistad"><a class="lightbox" href="<?=base_url();?>enviarPostales/amistad1"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/postales/amistad/image1.png"></a></div>
               <div class="col-md-6 col-lg-4 item filterDiv amor"><a class="lightbox" href="<?=base_url();?>enviarPostales/amor1"><img class="img-thumbnail img-fluid image" src="assets/img/postales/amor/image1.png"></a></div>

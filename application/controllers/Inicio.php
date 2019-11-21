@@ -144,9 +144,19 @@ class Inicio extends CI_Controller {
     $this->load->view('enviarPostales',$data);
     $this->load->view('footer/footer');
   }
+  public function queEres(){
+    $dato = $this->session->userdata('login');
+    if (!($dato == 1 || $dato == 2)) {
+      $this->load->view('headers/header'); 
+      $this->load->view('queEres');
+
+    } else header("Location: ". base_url()); # Si la sesion esta activa no puedes acceder al registro
+  
+  
+  }
   public function cerrarSesion() {
     $this->session->sess_destroy();
-    header("Location: ". base_url());
+    $this->index(); 
   }
 }
 ?>
