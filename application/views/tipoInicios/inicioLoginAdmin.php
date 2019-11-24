@@ -8,7 +8,7 @@
     <section class="clean-block features">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Características de iPostal</h2>
+                <h2 class="text-white">Registrate y conoce los beneficios</h2>
                 <p>Empieza a crear tu propia postal ahora mismo.</p>
             </div>
             <div class="row justify-content-center">
