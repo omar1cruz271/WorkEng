@@ -81,7 +81,7 @@ class Inicio extends CI_Controller {
     $this->load->view('contact-us');
      $this->load->view('footer/footer');
    }
-   public function postales(){
+   public function empresas(){
     $dato = $this->session->userdata('login');
     $n = array('name' => $this->session->userdata('nombre'));
     $justName= explode(" ",$n["name"]);
@@ -90,13 +90,13 @@ class Inicio extends CI_Controller {
       if ($dato == 1) {
         $this->load->view('headers/headerActiveSesion',$n);
       } else $this->load->view('headers/headerAdmin');
-    } else header("Location: ". base_url()."inicio"); # Si no estas logueado no puedes acceder al apartado postales
+    } else header("Location: ". base_url()."inicio"); # Si no estas logueado no puedes acceder al apartado empresas
 
-     $this->load->view('categoriaPostales');
+     $this->load->view('categoriaempresas');
      $this->load->view('footer/footer');
    }
    
-   public function enviarPostales($nombre_imagen){
+   public function enviarempresas($nombre_imagen){
     $dato = $this->session->userdata('login');
     $n = array('name' => $this->session->userdata('nombre'));
     $justName= explode(" ",$n["name"]);
@@ -106,37 +106,37 @@ class Inicio extends CI_Controller {
       if ($dato == 1) {
         $this->load->view('headers/headerActiveSesion',$n);
       } else $this->load->view('headers/headerAdmin');
-    } else header("Location: ". base_url()."inicio"); # Si no estas logueado no puedes acceder al apartado postales
+    } else header("Location: ". base_url()."inicio"); # Si no estas logueado no puedes acceder al apartado empresas
 
       print_r($nombre_imagen);
       $array_urls = array(
-        "factureras1" => "assets/img/postales/factureras/image1.jpg",
-        "factureras2" => "assets/img/postales/factureras/image2.jpg",
-        "factureras3" => "assets/img/postales/factureras/image3.jpg",
-        "factureras4" => "assets/img/postales/factureras/image4.jpg",
-        "factureras5" => "assets/img/postales/factureras/image5.jpg",                 
-        "mercado1" =>"assets/img/postales/factureras/em/image1.jpg",
-        "mercado2" =>"assets/img/postales/factureras/em/image2.jpg",
-        "mercado3" =>"assets/img/postales/factureras/em/image3.jpg",
-        "mercado4" =>"assets/img/postales/factureras/em/image4.jpg",
-        "mercado5" =>"assets/img/postales/factureras/em/image5.jpg",
-        "servicios1" =>"assets/img/postales/servicios/image1.jpg",
-        "servicios2" =>"assets/img/postales/servicios/image2.jpg",
-        "servicios3" =>"assets/img/postales/servicios/image3.jpg",
-        "servicios4" =>"assets/img/postales/servicios/image4.jpg",
-        "servicios5" =>"assets/img/postales/servicios/image5.jpg",
-        "tecnologia1" =>"assets/img/postales/tecnologia/image1.jpg",
-        "tecnologia2" =>"assets/img/postales/tecnologia/image2.jpg",
-        "tecnologia3" =>"assets/img/postales/tecnologia/image3.jpg",
-        "tecnologia4" =>"assets/img/postales/tecnologia/image4.jpg",
-        "tecnologia5" =>"assets/img/postales/tecnologia/image5.jpg",
-        "tecnologia6" =>"assets/img/postales/tecnologia/image6.jpg"
+        "factureras1" => "assets/img/empresas/factureras/image1.jpg",
+        "factureras2" => "assets/img/empresas/factureras/image2.jpg",
+        "factureras3" => "assets/img/empresas/factureras/image3.jpg",
+        "factureras4" => "assets/img/empresas/factureras/image4.jpg",
+        "factureras5" => "assets/img/empresas/factureras/image5.jpg",                 
+        "mercado1" =>"assets/img/empresas/factureras/em/image1.jpg",
+        "mercado2" =>"assets/img/empresas/factureras/em/image2.jpg",
+        "mercado3" =>"assets/img/empresas/factureras/em/image3.jpg",
+        "mercado4" =>"assets/img/empresas/factureras/em/image4.jpg",
+        "mercado5" =>"assets/img/empresas/factureras/em/image5.jpg",
+        "servicios1" =>"assets/img/empresas/servicios/image1.jpg",
+        "servicios2" =>"assets/img/empresas/servicios/image2.jpg",
+        "servicios3" =>"assets/img/empresas/servicios/image3.jpg",
+        "servicios4" =>"assets/img/empresas/servicios/image4.jpg",
+        "servicios5" =>"assets/img/empresas/servicios/image5.jpg",
+        "tecnologia1" =>"assets/img/empresas/tecnologia/image1.jpg",
+        "tecnologia2" =>"assets/img/empresas/tecnologia/image2.jpg",
+        "tecnologia3" =>"assets/img/empresas/tecnologia/image3.jpg",
+        "tecnologia4" =>"assets/img/empresas/tecnologia/image4.jpg",
+        "tecnologia5" =>"assets/img/empresas/tecnologia/image5.jpg",
+        "tecnologia6" =>"assets/img/empresas/tecnologia/image6.jpg"
 
       );
       $data = array();
       $data["imagen"] = $array_urls[$nombre_imagen];
       $data["nombreP"]= $n;
-    $this->load->view('enviarPostales',$data);
+    $this->load->view('enviarempresas',$data);
     $this->load->view('footer/footer');
   }
   public function queEres(){
