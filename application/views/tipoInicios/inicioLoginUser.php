@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
                     <h4>Agenda trabajos via Email o Whatsapp</h4>
-                    <p>WorkEng te permite contactar con la empresa y sobre ello esta se comunica contigo por el medio que desees, adaptandose a las nuevas tecnologías</p>
+                    <p>WorkEng te permite contactar con la empresa y sobre ello esta se comunica contigo por el medio que desees, adaptándose a las nuevas tecnologías</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
                     <h4>Estudiantes a la vanguardia de conocimientos</h4>
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
                     <h4>Mantente actualizado sobre puestos de trabajo</h4>
-                    <p>Echa un vistazo a las nuevas ofertas, desarrolate en el ambiente que más te guste</p>
+                    <p>Echa un vistazo a las nuevas ofertas, desarrollate en el ambiente que más te guste</p>
                 </div>
             </div>
         </div>
@@ -81,8 +81,8 @@
     <section id="sect2" class="clean-block about-us">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-white">Acerca de nosotros</h2>
-                <p>Encuentra información acerca de cada uno de los desarrolladores</p>
+                <h2 class="text-white">Acerca de los trabajadores</h2>
+                <p>Conoce a los desarrolladores más destacados.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-4">
