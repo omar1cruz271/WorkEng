@@ -7,26 +7,26 @@
     </section>
     <section class="clean-block features">
         <div class="container">
-            <div class="block-heading">
-                <h2 class="text-info">Características de iPostal</h2>
-                <p>Empieza a crear tu propia postal ahora mismo.</p>
+        <div class="block-heading">
+                <h2 class="text-white">Registrate y conoce los beneficios</h2>
+                <p>Empieza en el mundo laboral</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-5 feature-box"><i class="icon-star icon"></i>
-                    <h4>Elige tu postal favorita</h4>
-                    <p>Tenemos una amplia gama de postales a escoger. Podrás elegir entre postales de amor y amistad, halloween, navidad, entre otras.&nbsp;</p>
+                <div class="col-md-5 feature-box"><i class="icon-star icon "></i>
+                    <h4>Elige al trabajador que buscas</h4>
+                    <p>Tenemos una amplia gama de talento Politécnico.</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
-                    <h4>Manda tu postal vía Email o Whatsapp</h4>
-                    <p>iPostal te permite mandar tu postal directamente al WhatsApp del destinatario. O bien a su correo electrónico.</p>
+                    <h4>Agenda trabajos via Email o Whatsapp</h4>
+                    <p>WorkEng te permite contactar con el estudiante o egresado y sobre ello; se comunica contigo por el medio que desees, adaptandose a las nuevas tecnologías</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-screen-smartphone icon"></i>
-                    <h4>Añade texto personalizado</h4>
-                    <p>Dale tu propio estilo al mensaje. Elige el color, tamaño y tipo de letra que usarás en el mensaje de tu postal.</p>
+                    <h4>Estudiantes a la vanguardia de conocimientos</h4>
+                    <p>Conoce a los alumnos más solicitados.</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-refresh icon"></i>
-                    <h4>Mira las más usadas</h4>
-                    <p>Echa un vistazo a las postales más usadas del sitio.</p>
+                    <h4>Mantente actualizado sobre los puestos de los estudiantes</h4>
+                    <p>Encuentra con los alumnos más solicitados</p>
                 </div>
             </div>
         </div>
@@ -44,6 +44,8 @@
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image2-scroll.jpg" alt="Slide Image"></div>
                     <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image3-scroll.jpg" alt="Slide Image"></div>
                 </div>
+
+
                 <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button"
                         data-slide="next"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
                 <ol class="carousel-indicators">
@@ -58,15 +60,15 @@
     <section class="clean-block about-us">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Acerca de nosotros</h2>
-                <p>Encuentra información acerca de cada uno de los desarrolladores</p>
+                <h2 class="text-info">Acerca de los trabajadores</h2>
+                <p>Encuentra información acerca de los desarrolladores más reconocidos.</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-sm-6 col-lg-4">
+            <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Carlos Cobi&aacute;n</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Sandra Calderón</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Mecanica</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
@@ -74,8 +76,8 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Omar Cruz</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Omar Cruz</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Sistemas Cmputacionales.</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
@@ -83,8 +85,8 @@
                 <div class="col-sm-6 col-lg-4">
                     <div class="card clean-card text-center">
                         <div class="card-body info">
-                            <h4 class="card-title">Rodrigo Garc&iacute;a</h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <h4 class="card-title" style="color:black">Karen Cruz</h4>
+                            <p class="card-text" style="color:black">Carrera: Ing. Comunicaciones y eletrónica.</p>
                             <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                         </div>
                     </div>
