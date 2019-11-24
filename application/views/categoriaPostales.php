@@ -39,7 +39,7 @@
               <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia1"><img class="img-thumbnail img-fluid image" src="assets/img/tecnologia/image1.jpg"></a></div>
              
               <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras2"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/factureras/em/image2.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado2"><img class="img-thumbnail img-fluid image" src="assets/img/mercado/image2.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado2"><img class="img-thumbnail img-fluid image" src="assets/img/mercado/image1.jpg"></a></div>
               <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios2"><img class="img-thumbnail img-fluid image" src="assets/img/servicios/image2.jpg"></a></div>
               <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia2"><img class="img-thumbnail img-fluid image" src="assets/img/tecnologia/image2.jpg"></a></div>
              
