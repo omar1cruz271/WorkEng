@@ -107,7 +107,7 @@ if($_POST  ){
          
     
     
-        $mail->addAttachment(trim('C:\xampp\htdocs\Postales\ ').$imagenNuevo, 'iPostal.png');    // Optional name
+        $mail->addAttachment(trim('C:\xampp\htdocs\WorkEng\ ').$imagenNuevo, 'iPostal.png');    // Optional name
     
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
@@ -129,11 +129,11 @@ $data = [
     'phone' => '52'.$_POST["whats"], // Receivers phone
     'body' =>  $b64image,
     'filename'=> "imagen",
-    'caption'=>'Tienes una nueva postal de: '.$nombreP.', en '.$_POST["correo"].", dale un vistazo!" // Message
+    'caption'=>'Enviaste una solicitud de empleo a : '.$nombreP.', cualquier información, revisa el correo '.$_POST["correo"].", se ha enviado información de las vacantes!\n"."Ubicación fisica de la empresa:\n\n".$direccion
 ];
 $json = json_encode($data); // Encode data to JSON
 // URL for request POST /message
-$url = 'https://api.chat-api.com/instance79479/sendFile?token=fvm52qmpl45l6vu7';
+$url = 'https://eu88.chat-api.com/instance82140/sendFile?token=flmgkvrplzojpjlw';
 // Make a POST request
 $options = stream_context_create(['http' => [
         'method'  => 'POST',
