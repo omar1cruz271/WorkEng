@@ -34,17 +34,17 @@
 <body>
 <div class="fixed-top">
     <nav class="navbar navbar-light navbar-expand-lg bg-white clean-navbar">
-        <div class="container"><a class="navbar-brand logo" href="<?php base_url(); ?>inicio">WorkEng</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand logo" href="<?= base_url(); ?>inicio">WorkEng</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="<?php base_url(); ?>inicio">Inicio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>caracteristicas">Características</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url(); ?>postales">Reportes</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url(); ?>about">Acerca de</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>contacto">Cont&aacute;ctanos</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>contacto">Administrador</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>salir">Cerrar Sesi&oacute;n</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="<?= base_url(); ?>inicio">Inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url();?>caracteristicas">Características</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url(); ?>postales">Reportes</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url(); ?>about">Acerca de</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url();?>contacto">Cont&aacute;ctanos</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url();?>contacto">Administrador</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?= base_url();?>salir">Cerrar Sesi&oacute;n</a></li>
                 </ul>
             </div>
         </div>
