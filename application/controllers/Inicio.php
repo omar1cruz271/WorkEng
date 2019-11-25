@@ -110,7 +110,8 @@ class Inicio extends CI_Controller {
 
       print_r($nombre_imagen);
       $array_urls = array(
-        "mercado1" => "assets/img/empresas/mercado/image1.jpg",
+        "mercado1" => "assets/img/empresas/mercado/image1.jpg"
+        ,
         "mercado2" => "assets/img/empresas/mercado/image2.jpg",
         "mercado3" => "assets/img/empresas/mercado/image3.jpg",
         "mercado4" => "assets/img/empresas/mercado/image4.jpg",
