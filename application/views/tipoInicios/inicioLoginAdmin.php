@@ -61,7 +61,7 @@
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-info">Acerca de los trabajadores</h2>
-                <p>Encuentra información acerca de los desarrolladores más reconocidos.</p>
+                <p>Encuentra información acerca de los estudiantes más reconocidos.</p>
             </div>
             <div class="row justify-content-center">
             <div class="col-sm-6 col-lg-4">

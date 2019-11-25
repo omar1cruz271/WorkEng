@@ -58,7 +58,7 @@
     <section class="clean-block slider dark">
         <div class="container">
             <div class="block-heading">
-                <h1 class="text-info">Conocenos</h1>
+                <h1 class="text-info">Conócenos</h1>
                 <p>"Encuentra las empresas más reconocidas y a los estudiantes más destacados y solicitados."</p>
             </div>
             <div class="carousel slide" data-ride="carousel" id="carousel-1">
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-white">Acerca de nosotros</h2>
-                <p>Encuentra información acerca de los desarrolladores.</p>
+                <p>Encuentra información acerca de los estudiantes.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-4">
