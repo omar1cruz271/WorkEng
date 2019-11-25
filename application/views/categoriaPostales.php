@@ -33,31 +33,31 @@
                     <p>Elige la empresa que más te agrade para obtener información sobre ella y sobre sus trabajos</p>
                 </div>
             <div class="row" id="images"> 
-              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras1"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image1.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image1.png"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image1.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image1.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?php base_url();?>enviarPostales/factureras1"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image1.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?php base_url();?>enviarPostales/mercado1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image1.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?php base_url();?>enviarPostales/servicios1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image1.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia1"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image1.jpg"></a></div>
              
-              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras2"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image2.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image2.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image2.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image2.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?php base_url();?>enviarPostales/factureras2"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image2.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?php base_url();?>enviarPostales/mercado2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image2.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?php base_url();?>enviarPostales/servicios2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image2.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia2"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image2.png"></a></div>
              
-              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras3"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image3.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image3.png"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image3.png"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image3.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?php base_url();?>enviarPostales/factureras3"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image3.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?php base_url();?>enviarPostales/mercado3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image3.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?php base_url();?>enviarPostales/servicios3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image3.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia3"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image3.jpg"></a></div>
               
-              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras4"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image4.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image4.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image4.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image4.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?php base_url();?>enviarPostales/factureras4"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image4.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?php base_url();?>enviarPostales/mercado4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image4.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?php base_url();?>enviarPostales/servicios4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image4.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia4"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image4.jpg"></a></div>
 
-              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?=base_url();?>envia/factureras5"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image5.png"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?=base_url();?>envia/mercado5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image5.png"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?=base_url();?>envia/servicios5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image5.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image5.jpg"></a></div>
-              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?=base_url();?>envia/tecnologia6"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image6.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv factureras"><a class="lightbox" href="<?php base_url();?>enviarPostales/factureras5"><img  class="img-thumbnail img-fluid image" id="img1" src="assets/img/empresas/factureras/em/image5.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv mercado"><a class="lightbox" href="<?php base_url();?>enviarPostales/mercado5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/mercado/image5.png"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv servicios"><a class="lightbox" href="<?php base_url();?>enviarPostales/servicios5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/servicios/image5.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia5"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image5.jpg"></a></div>
+              <div class="col-md-6 col-lg-4 item filterDiv tecnologia"><a class="lightbox" href="<?php base_url();?>enviarPostales/tecnologia6"><img class="img-thumbnail img-fluid image" src="assets/img/empresas/tecnologia/image6.png"></a></div>
 
             </div>
         </div>

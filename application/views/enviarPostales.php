@@ -10,7 +10,15 @@
             <div class="row">
                 <div class="col-sm">
                     <br>
-                    <img class="img-thumbnail img-fluid image" id="img1" src="<?=base_url().$imagen?>">
+                    <img class="img-thumbnail img-fluid image" id="img1" src="<?php echo( "http://localhost/WorkEng/".$imagen)?>">
+                    <br>
+                    <p><?php echo($desc) ?></p>
+                    <br> <div class="block-heading">
+                <h4 class="text-info">Localidad</h4>
+                <p> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX </p>
+                <p> </p>
+                <iframe src=<?php echo($direccion) ?> width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
                 </div>
             </div>
             <br>
@@ -36,6 +44,7 @@
         </div>
     </section>
 </main>
+
 
 <script>
 
