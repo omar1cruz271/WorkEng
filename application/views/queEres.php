@@ -21,7 +21,7 @@
                               <p><br> <br> Soy EMPRESA <br></p>
                             <i id="iconoE" class="fas fa-briefcase fa-5x white-text"></i> <br>
 
-                           <form action="POST"><button id="btempresa" type="button"  class="btn btn-success" onclick=" location.href='<?php base_url(); ?>registro'">¡VAMOS POR TALENTO!</button></form>
+                           <form action="POST"><button id="btempresa" type="button"  class="btn btn-success" onclick=" location.href='<?php base_url(); ?>registroEmpresa'">¡VAMOS POR TALENTO!</button></form>
                     </div>
                 </div>
             
