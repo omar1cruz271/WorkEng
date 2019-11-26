@@ -14,7 +14,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-5 feature-box"><i class="icon-star icon "></i>
                     <h4>Elige al trabajador que buscas</h4>
-                    <p>Tenemos una amplia gama de talento Politécnico.</p>
+                    <p>Tenemos una amplia gama de diversos alumn@s con gran talento Politécnico.</p>
                 </div>
                 <div class="col-md-5 feature-box"><i class="icon-pencil icon"></i>
                     <h4>Agenda trabajos via Email o Whatsapp</h4>

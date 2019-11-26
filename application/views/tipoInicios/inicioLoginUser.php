@@ -16,14 +16,14 @@
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-info">Información.</h2>
-                <p>WorkEng es un sitio que te ayudara a encontrar empleo o empleados de una manera muy sencilla. </p>
+                <p>WorkEng es un sitio que te ayudara a encontrar empleo de una manera muy sencilla. </p>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-6"><img class="img-thumbnail" src="assets/img/oferta.jpg"></div>
                 <div class="col-md-6">
-                    <h3 class="text-info">¡Únete a nosotros!</h3>
+                    <h3 class="text-info">¡Únete!</h3>
                     <div class="getting-started-info">
-                        <p>Podrás encontrar a tu mejor empleado</p>
+                        <p>Podrás encontrar la empresa que tanto has querido trabajar</p>
                     </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button></div>
             </div>
         </div>
@@ -82,7 +82,7 @@
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-white">Acerca de los trabajadores</h2>
-                <p>Conoce a los desarrolladores más destacados.</p>
+                <p>Convierteté en uno de los alumn@s más destacados.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-4">
