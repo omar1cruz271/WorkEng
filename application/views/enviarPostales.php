@@ -1,18 +1,21 @@
 </div>
 <main class="page gallery-page">
     <section class="clean-block clean-gallery dark">
+    
         <div class="container">
             <div class="block-heading" style="padding-top: 140px;">
+
             <form action="" method="POST">
             
-    
+            <a href='<?=base_url()."crearPDF"?>' target="_blank">
+         <input type="button" value="Descargar PDF" class="btn btn-success" >
+            </a> 
      <?php
      if($_POST ){
     require_once __DIR__ . '/vendor/autoload.php';
     require_once __DIR__ . '/HTMLpdf.php';
-    
-echo($imagen);
-    $plantilla= getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion);
+
+    $plantilla= getPlantilla($imagen,$descripcion,$email,$nombreP, $usuario,$direccion);
     $mpdf = new \Mpdf\Mpdf();
    
     //$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);
@@ -21,13 +24,13 @@ echo($imagen);
     $mpdf->Output();
      }
 ?>
-
+<h1 align="center"><?php echo($nombreP); ?></h1>
             <div class="row">
                 <div class="col-sm">
                     <br>
                     <img class="img-thumbnail img-fluid image" id="img1" src="<?php echo( "http://localhost/WorkEng/".$imagen)?>">
                     <br>
-                    <p><?php echo($desc) ?></p>
+                    <p><?php echo($descripcion) ?></p>
                     <br> <div class="block-heading">
                 <h4 class="text-info">Localidad</h4>
                 <p> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX </p>
@@ -99,7 +102,7 @@ if($_POST  ){
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username   = 'omar1cruz2714721@gmail.com';                     // SMTP username
-        $mail->Password   = 'fakiebigflip123';                               // SMTP password
+        $mail->Password   = 'skate752837';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 
@@ -133,7 +136,7 @@ if($_POST  ){
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = 'INFORMACION DE LA EMPRESA A LA QUE SOLICITAS';
-        $mail->Body    = '<b>Las caracteristicas de la empresa se preentan a continuacion</b>: <br>'.$desc;
+        $mail->Body    = '<b>Las caracteristicas de la empresa se preentan a continuacion</b>: <br>'.$descripcion;
       //  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
@@ -154,7 +157,7 @@ $data = [
 ];
 $json = json_encode($data); // Encode data to JSON
 // URL for request POST /message
-$url = 'https://eu88.chat-api.com/instance82140/sendFile?token=flmgkvrplzojpjlw';
+$url = 'https://eu87.chat-api.com/instance82724/sendFile?token=bm0ikbs6mkg1cxgs';
 // Make a POST request
 $options = stream_context_create(['http' => [
         'method'  => 'POST',
