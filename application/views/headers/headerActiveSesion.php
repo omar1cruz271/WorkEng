@@ -41,13 +41,13 @@
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="<?php base_url(); ?>inicio">Inicio</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url(); ?>caracteristicas">Características</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url(); ?>postales">Empresas</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>about">Acerca de</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>contacto">Cont&aacute;ctanos</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="<?=base_url(); ?>inicio">Inicio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url(); ?>caracteristicas">Características</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url(); ?>postales">Empresas</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>about">Acerca de</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>contacto">Cont&aacute;ctanos</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="#"><?= $name ?></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?php base_url();?>salir">Cerrar Sesi&oacute;n</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>salir">Cerrar Sesi&oacute;n</a></li>
                 </ul>
             </div>
         </div>
