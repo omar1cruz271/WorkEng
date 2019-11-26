@@ -8,7 +8,7 @@
     <section class="clean-block features">
         <div class="container">
         <div class="block-heading">
-                <h2 class="text-white">Registrate y conoce los beneficios</h2>
+                <h2 class="text-grey">Registrate y conoce los beneficios</h2>
                 <p>Empieza en el mundo laboral</p>
             </div>
             <div class="row justify-content-center">
@@ -34,15 +34,14 @@
     <section class="clean-block slider dark">
         <div class="container">
             <div class="block-heading">
-                <h2 class="text-info">Slider</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+                <h2 class="text-info">Conócenos</h2>
+                <p>Puedes encontrar a los estudiantes màs destacados y solicitados.</p>
             </div>
             <div class="carousel slide" data-ride="carousel" id="carousel-1">
                 <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/scenery/image1-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image4-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image2-scroll.jpg" alt="Slide Image"></div>
-                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/scenery/image3-scroll.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item active"><img class="w-100 d-block" src="assets/img/image2.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/image5.jpg" alt="Slide Image"></div>
+                    <div class="carousel-item"><img class="w-100 d-block" src="assets/img/image6.jpg" alt="Slide Image"></div>
                 </div>
 
 
@@ -52,7 +51,6 @@
                     <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-1" data-slide-to="1"></li>
                     <li data-target="#carousel-1" data-slide-to="2"></li>
-                    <li data-target="#carousel-1" data-slide-to="3"></li>
                 </ol>
             </div>
         </div>
