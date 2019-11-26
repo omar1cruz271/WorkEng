@@ -4,9 +4,24 @@
         <div class="container">
             <div class="block-heading" style="padding-top: 140px;">
             <form action="" method="POST">
-                <h2 class="text-info">¡Redacta tu mensaje!</h2>
-            </div>
-                <textarea id="mensajePostal" name="mensajeiPostal"></textarea>
+            
+    
+     <?php
+     if($_POST ){
+    require_once __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . '/HTMLpdf.php';
+    
+echo($imagen);
+    $plantilla= getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion);
+    $mpdf = new \Mpdf\Mpdf();
+   
+    //$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);
+    $mpdf->WriteHTML($plantilla);
+    
+    $mpdf->Output();
+     }
+?>
+
             <div class="row">
                 <div class="col-sm">
                     <br>
@@ -35,8 +50,14 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-sm" align="center">
+                    
+                <i class="fas fa-file-pdf fa-5x"></i><br> <br>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm" align="center" id="btnenv">
-                        <button id="env" class="btn btn-primary" type="submit">Enviar</button>
+                        <button id="env" class="btn btn-primary" type="submit">Enviar y descargar PDF</button>
                     </div>
                 </div>
             </form>
@@ -64,7 +85,7 @@
     use PHPMailer\PHPMailer\Exception;
 
 if($_POST  ){
-
+    if($_POST["whats"]!=""){
     require 'PHPMailer/Exception.php';
     require 'PHPMailer/PHPMailer.php';
     require 'PHPMailer/SMTP.php';
@@ -107,12 +128,12 @@ if($_POST  ){
          
     
     
-        $mail->addAttachment(trim('C:\xampp\htdocs\WorkEng\ ').$imagenNuevo, 'iPostal.png');    // Optional name
+        $mail->addAttachment(trim('C:\xampp\htdocs\WorkEng\ ').$imagenNuevo, 'WorkEng.png');    // Optional name
     
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Esta es una Postal de iPostal';
-        $mail->Body    = '<b>FELICIDADES ESTA ES TU POSTAL</b>: <br>'.$_POST["mensajeiPostal"];
+        $mail->Subject = 'INFORMACION DE LA EMPRESA A LA QUE SOLICITAS';
+        $mail->Body    = '<b>Las caracteristicas de la empresa se preentan a continuacion</b>: <br>'.$desc;
       //  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();
@@ -143,6 +164,6 @@ $options = stream_context_create(['http' => [
     ]
 ]);
 $result = file_get_contents($url, false, $options);
-
+    }
 }
 ?>

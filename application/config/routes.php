@@ -62,3 +62,4 @@ $route['postales'] = "Inicio/postales";
 $route['enviarPostales/(:any)']="Inicio/enviarPostales/$1";
 $route['salir'] = "Inicio/cerrarSesion";
 $route['queEres']="Inicio/queEres";
+$route['crearPDF']="Inicio/crearPDF";

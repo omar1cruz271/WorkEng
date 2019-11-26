@@ -103,7 +103,16 @@ class Inicio extends CI_Controller {
      $this->load->view('categoriaPostales');
      $this->load->view('footer/footer');
    }
-   
+   public function crearPDF(){
+    require_once 'C:\xampp\htdocs\WorkEng\application\views\enviarPostales.php';
+    $data= array();
+    $data["imagen"]=$imagen;
+    $data["desc"]=$desc;
+    $data["nombreP"]=$nombreP;
+    $data["usuario"]=$usuario;
+    $data["direccion"]=$direccion;
+   $this->load->view('crearMPDF',$data);
+  }
    public function enviarPostales($nombre_imagen){
     $dato = $this->session->userdata('login');
     $n = array('name' => $this->session->userdata('nombre'));
@@ -146,6 +155,9 @@ class Inicio extends CI_Controller {
       $data["desc"] = $array1[$nombre_imagen][1];
       $data["direccion"] = $array1[$nombre_imagen][2];
       $data["nombreP"]= $array1[$nombre_imagen][3];
+      $data["usuario"]= $this->session->userdata('nombre');
+      $data["email"]= $this->session->userdata('priv');
+      
     $this->load->view('enviarPostales',$data);
     $this->load->view('footer/footer');
   }
