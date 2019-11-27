@@ -3,7 +3,7 @@
         <section class="clean-block clean-form dark">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Registro Empresa</h2>
+                    <h2 class="text-info"> <br> Registro Empresa </br> </h2>
                     <p>Registrate con tu nombre de empresa y un correo electr&oacute;nico.&nbsp;</p>
                 </div>
                 <form id="formRegistro">
