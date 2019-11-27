@@ -10,36 +10,80 @@
             <a href='<?=base_url()."crearPDF"?>' target="_blank">
          <input type="button" value="Descargar PDF" class="btn btn-success" >
             </a> 
-<?php if (! defined('BASEPATH')) exit('No direct script access allowed');
+     <?php
+     if($_POST ){
+    require_once __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . '/HTMLpdf.php';
 
-class RegistroAjax extends CI_Controller {
-    function __construct() {
-        parent::__construct();
-        $this->load->model('formularios_model');
+    $plantilla= getPlantilla($imagen,$descripcion,$email,$nombreP, $usuario,$direccion);
+    $mpdf = new \Mpdf\Mpdf();
+   
+    //$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);
+    $mpdf->WriteHTML($plantilla);
+    
+    $mpdf->Output();
+     }
+?>
+<h1 align="center"><?php echo($nombreP); ?></h1>
+            <div class="row">
+                <div class="col-sm">
+                    <br>
+                    <img class="img-thumbnail img-fluid image" id="img1" src="<?php echo( "http://localhost/WorkEng/".$imagen)?>">
+                    <br>
+                    <p><?php echo($descripcion) ?></p>
+                    <br> <div class="block-heading">
+                <h4 class="text-info">Localidad</h4>
+                <p> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX </p>
+                <p> </p>
+                <iframe src=<?php echo($direccion) ?> width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+                </div>
+            </div>
+            <br>
+
+            
+                <div align="center" class="row">
+                    <div class="col-md-4 col-lg-6 item">
+                        <i id="iconoW" class="fab fa-whatsapp fa-5x green-text"></i> Número de WhatsApp:
+                        <input id="whats" name="whats" type="tel">
+                    </div>
+                    <div class="col-md-4 col-lg-6 item">
+                        <i id="iconoM" class="fas fa-envelope-square fa-5x red-text"></i> Mail:
+                        <input id="mensaje" name="correo" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" align="center">
+                    
+                <i class="fas fa-file-pdf fa-5x"></i><br> <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm" align="center" id="btnenv">
+                        <button id="env" class="btn btn-primary" type="submit">Enviar y descargar PDF</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </section>
+</main>
+
+
+<script>
+
+  var simplemde = new SimpleMDE({
+    element: document.getElementById("mensajePostal"),
+    autosave: {
+      enabled: true,
+      uniqueId: "MyUniqueID",
+      delay: 1000,
     }
-    public function index() {
-        $respAX = array();
-        $info = array(
-            'nombre' => $usuario,
-            'nombreP' => $nombreP,
-            'email' => $email,
-            'rutaCV' => "esta es mi ruta",
-        );
-        $er = $this->formularios_model->registrarUsuario($data);
-        if ($er) {
-            $respAX["val"] = 1;
-            $respAX["msj"] = "<h5 class='text-info text-dark'>¡Registro Exitoso!</h5>";
-            $respAX["icon"] = "fas fa-check fa-2x";
-            $respAX["title"] = "<h4 class='text-info text-success'>Estado del registro:</h4>";
-        } else {
-            $respAX["val"] = 0;
-            $respAX["msj"] = "<h5 class='text-info text-dark'>Registro fallido, ya existe ese email</h5>";
-            $respAX["icon"] = "fas fa-exclamation fa-2x";
-            $respAX["title"] = "<h4 class='text-info text-danger'>Estado del registro:</h4>";
-        }
-        echo json_encode($respAX);
+  });
 
-        
+</script>
+
+<?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
@@ -125,84 +169,4 @@ $options = stream_context_create(['http' => [
 $result = file_get_contents($url, false, $options);
     }
 }
-    } # Fin de funcion de registro
-    //Registro PDF
-    if($_POST ){
-        require_once __DIR__ . '/vendor/autoload.php';
-        require_once __DIR__ . '/HTMLpdf.php';
-    
-        date_default_timezone_set('America/Mexico_City');
-    
-        $plantilla= getPlantilla(date('l jS \of F Y'), $imagen,$descripcion,$email,$nombreP, $usuario,$direccion);
-        $mpdf = new \Mpdf\Mpdf();
-       
-        //$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);
-        $mpdf->WriteHTML($plantilla);
-        
-        $mpdf->Output();
-         }
-         //envio
-}
-}  
-?>
-<h1 align="center"><?php echo($nombreP); ?></h1>
-            <div class="row">
-                <div class="col-sm">
-                    <br>
-                    <img class="img-thumbnail img-fluid image" id="img1" src="<?php echo( "http://localhost/WorkEng/".$imagen)?>">
-                    <br>
-                    <p><?php echo($descripcion) ?></p>
-                    <br> <div class="block-heading">
-                <h4 class="text-info">Localidad</h4>
-                <p> Av. Capitán Carlos León S/N, Peñón de los Baños, Venustiano Carranza, 15620 Ciudad de México, CDMX </p>
-                <p> </p>
-                <iframe src=<?php echo($direccion) ?> width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-                </div>
-            </div>
-            <br>
-
-            
-                <div align="center" class="row">
-                    <div class="col-md-4 col-lg-6 item">
-                        <i id="iconoW" class="fab fa-whatsapp fa-5x green-text"></i> Número de WhatsApp:
-                        <input id="whats" name="whats" type="tel">
-                    </div>
-                    <div class="col-md-4 col-lg-6 item">
-                        <i id="iconoM" class="fas fa-envelope-square fa-5x red-text"></i> Mail:
-                        <input id="mensaje" name="correo" type="text">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" align="center">
-                    
-                <i class="fas fa-file-pdf fa-5x"></i><br> <br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm" align="center" id="btnenv">
-                        <button id="env" class="btn btn-primary" type="submit">Enviar y descargar PDF</button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
-    </section>
-</main>
-
-
-<script>
-
-  var simplemde = new SimpleMDE({
-    element: document.getElementById("mensajePostal"),
-    autosave: {
-      enabled: true,
-      uniqueId: "MyUniqueID",
-      delay: 1000,
-    }
-  });
-
-</script>
-
-<?php
 ?>

@@ -58,7 +58,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
     if($_POST  ){
-    if($_POST["pdf"]=="si" ){
+   /* if($_POST["pdf"]=="si" ){
         require_once __DIR__ . '/vendor/autoload.php';
     require_once __DIR__ . '/HTMLpdf.php';
 
@@ -71,7 +71,7 @@
     $mpdf->WriteHTML($plantilla);
     
     $mpdf->Output();
-         }else{
+         }else{*/
 
     if($_POST["whats"]!=""){
     require 'PHPMailer/Exception.php';
@@ -142,7 +142,7 @@ $data = [
 ];
 $json = json_encode($data); // Encode data to JSON
 // URL for request POST /message
-$url = 'https://eu87.chat-api.com/instance82724/sendFile?token=bm0ikbs6mkg1cxgs';
+$url = 'https://eu80.chat-api.com/instance83045/sendFile?token=6ofx5edj5e91omi0';
 // Make a POST request
 $options = stream_context_create(['http' => [
         'method'  => 'POST',
@@ -154,7 +154,7 @@ $options = stream_context_create(['http' => [
 $result = file_get_contents($url, false, $options);
     }
 }
-         }
+         
 
 ?>
 

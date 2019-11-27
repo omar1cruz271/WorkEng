@@ -6,34 +6,34 @@
                     <h2 class="text-info">Registro Empresa</h2>
                     <p>Registrate con tu nombre de empresa y un correo electr&oacute;nico.&nbsp;</p>
                 </div>
-                <form id="formRegistro">
+                <form id="formEmpresa">
                     <div class="form-group"><label for="name">Nombe completo de la empresa</label><input class="form-control item" type="text" id="name" name="name" data-validetta="required,maxLength[9]"></div>
-                    <div class="form-group"><label for="name">Cédula de Identificación Fiscal/label><input class="form-control item" type="text" id="name" name="name" data-validetta="required,maxLength[64]"></div>
+                    <div class="form-group"><label for="name">Cédula de Identificación Fiscal/label><input class="form-control item" type="text" id="name" name="cif" data-validetta="required,maxLength[64]"></div>
                     <div class="form-group"><label for="password">Contrase&ntilde;a</label><input class="form-control item" type="password" id="password" name="password" data-validetta="required,minLength[5],maxLength[32]"></div>
                     <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" placeholder="ejemplo@dominio.com" id="email" name="email" data-validetta="required,email,maxLength[32]"></div>
                     <div class="form-group"><label for="mobile">M&oacute;vil</label><input class="form-control item" type="tel" id="mobile" name="mobile" data-validetta="required,number,minLength[10],maxLength[10]"></div>
-                    <div class="form-group"><label for="mobile">Direcci</label><input class="form-control item" type="tel" id="mobile" name="mobile" data-validetta="required,number,minLength[10],maxLength[10]"></div>
+                    <div class="form-group"><label for="mobile">Direcci</label><input class="form-control item" type="text" id="mobile" name="direccion" data-validetta="required,minLength[5],maxLength[15]"></div>
                     <div class="form-group"><label for="gender">Giro:</label></div>
                     <div class="form-group form-check">
-                        <input class="form-check-input" type="radio" id="gender" name="gender" value="m" checked>
+                        <input class="form-check-input" type="radio" id="gender" name="gender" value="Manufactureras" checked>
                         <label class="form-check-label" for="gender">
                             Manufactureras
                         </label>
                     </div>
                     <div class="form-group form-check">
-                        <input class="form-check-input" type="radio" id="gender2" name="gender" value="s">
+                        <input class="form-check-input" type="radio" id="gender2" name="gender" value="Servicios">
                         <label class="form-check-label" for="gender2">
                             Servicios
                         </label>
                     </div>
                     <div class="form-group form-check">
-                        <input class="form-check-input" type="radio" id="gender3" name="gender" value="m">
+                        <input class="form-check-input" type="radio" id="gender3" name="gender" value="Mercado">
                         <label class="form-check-label" for="gender3">
                             Mercado
                         </label>
                     </div>
                     <div class="form-group form-check">
-                        <input class="form-check-input" type="radio" id="gender4" name="gender" value="T">
+                        <input class="form-check-input" type="radio" id="gender4" name="gender" value="Tecnologias">
                         <label class="form-check-label" for="gender4">
                             Tecnologias
                         </label>
@@ -47,7 +47,7 @@
 </main>
 <script>
     $(document).ready(function(){
-        $("#formRegistro").validetta({
+        $("#formEmpresa").validetta({
             bubblePosition: 'bottom',
             bubbleGapTop: 10,
             bubbleGapLeft: -5,
@@ -55,8 +55,8 @@
                 e.preventDefault();
                 $.ajax({
                     method:"POST",
-                    url:"<?php base_url(); ?>registroAjax",
-                    data:$("#formRegistro").serialize(),
+                    url:"<?php base_url(); ?>registroEmpresaAjax",
+                    data:$("#formEmpresa").serialize(),
                     cache:false,
                     success:function(respAX){
                         var tipoAlerts = new Array("red","green");
@@ -68,9 +68,9 @@
                             type:tipoAlerts[AX.val],
                             onDestroy:function(){
                                 if (AX.val == 1) {
-                                    window.location.replace("<?php base_url()?>login");
+                                    window.location.replace("<?php base_url()?>loginEmpresa");
                                 } else {
-                                    $('#formRegistro')[0].reset();
+                                    $('#formEmpresa')[0].reset();
                                 }
                             }
                         });

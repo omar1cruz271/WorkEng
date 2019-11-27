@@ -76,6 +76,14 @@ class Inicio extends CI_Controller {
       $this->load->view('footer/footer');
     } else header("Location: ". base_url()); # Si la sesión está activa no puedes acceder al login
    }
+  public function loginEmpresa(){
+    $dato = $this->session->userdata('login');
+    if (!($dato == 1 || $dato == 2)) {
+      $this->load->view('headers/header');
+      $this->load->view('loginEmpresa');
+      $this->load->view('footer/footer');
+    } else header("Location: ". base_url()); # Si la sesión está activa no puedes acceder al login
+   }
    public function contacto(){
     $dato = $this->session->userdata('login');
     $n = array('name' => $this->session->userdata('nombre'));
