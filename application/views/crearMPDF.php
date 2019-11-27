@@ -3,7 +3,7 @@
     require_once __DIR__ . '/HTMLpdf.php';
     
 echo($imagen);
-    $plantilla= getPlantilla("assets/img/Empresas/mercado/image1.png","hola","hola.gmail","holaP", "Omar ","vivo aqui");
+    $plantilla= getPlantilla($fecha, $imagen,$descripcion,$email,$nombreP, $usuario,$direccion);
     $mpdf = new \Mpdf\Mpdf();
    
     //$mpdf->WriteHTML($css,\Mpdf\HTMLParserMode::HEADER_CSS);

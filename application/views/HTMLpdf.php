@@ -1,5 +1,5 @@
 <?php
-function getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion){
+function getPlantilla($fecha,$imagen,$desc,$email,$nombreP, $usuario,$direccion){
     $plantilla='   <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -11,7 +11,7 @@ function getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion){
         <header class="clearfix">
           <div id="logo">
           <h1>WorkEng</h1>
-            <img src="C:/xampp/htdocs/WorkEng/'.$imagen.'">
+            <img src="C:/xampp/htdocs/WorkEng/'.$imagen.'" width="400" height="250">
           </div>
           
           <div id="company" class="clearfix">
@@ -24,7 +24,7 @@ function getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion){
             <div><span>PROJECT</span>'.$usuario.'</div>
             <div><span>Empresa</span>'.$nombreP.'</div>
             <div><span>EMAIL referido</span> <a href="mailto:'.$email.'">'.$email.'</a></div>
-            <div><span>FECHA</span> August 17, 2015</div>
+            <div><span>FECHA</span>'.$fecha.'</div>
           </div>
         </header>
         <main>
@@ -38,7 +38,7 @@ function getPlantilla($imagen,$desc,$email,$nombreP, $usuario,$direccion){
             <tbody>
               <tr>
                 <td class="service">Design</td>
-                <td class="desc">'.$desc.'
+                <td class="desc"> <p align="justify">'.$desc.'</p>
                              </tr>
             </tbody>
           </table>

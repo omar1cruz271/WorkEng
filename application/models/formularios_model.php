@@ -43,5 +43,28 @@
                 return null;
             }
         }
+        public function solicitar($info) {
+            $sql = "SELECT * FROM solicitudes WHERE email = ?";
+            $this->db->query($sql,$info['email']);
+            if($this->db->affected_rows() == 1) {
+                return FALSE;
+            } else {
+
+                $this->db->insert('solicitudes',array(
+                        'Nombre' => $info['nombre'],
+                        'Empresa' => $info['nombreP'],
+                        'Correo' => $info['email'],
+                        'CV' => $data['rutaCV'],
+                        'Estado' => "Espera"
+                        //'fechaNac' => $data['fecha'],
+                        
+                ));
+                if ($this->db->affected_rows() == 1) {
+                    return TRUE;
+                } else {
+                    return FALSE;
+                }
+            }
+        }
     }
 ?>

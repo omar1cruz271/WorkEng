@@ -3,7 +3,7 @@
 class RegistroAjax extends CI_Controller {
     function __construct() {
         parent::__construct();
-        $this->load->model('formularioR_model');
+        $this->load->model('formularios_model');
     }
     public function index() {
         $respAX = array();
