@@ -46,7 +46,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url(); ?>postales">Empresas</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>about">Acerca de</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>contacto">Cont&aacute;ctanos</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><?= $name ?></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>infoPer"><?= $name ?></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="<?=base_url();?>salir">Cerrar Sesi&oacute;n</a></li>
                 </ul>
             </div>

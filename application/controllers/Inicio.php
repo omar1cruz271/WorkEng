@@ -3,6 +3,7 @@ class Inicio extends CI_Controller {
 
     public function __construct(){
       parent::__construct();
+      $this->load->helper('url');
     }
    public function index(){
     $dato = $this->session->userdata('login');
@@ -169,5 +170,19 @@ class Inicio extends CI_Controller {
     $this->session->sess_destroy();
     $this->index(); 
   }
+
+  public function infoPer(){
+    $dato["log"] = $this->session->userdata('login');
+    $dato["email"] = $this->session->userdata('mail');
+    $dato["interes"] = $this->session->userdata('interes');
+    $dato["carrera"] = $this->session->userdata('carrera');
+    $dato["nombre"] = $this->session->userdata('nombre');
+    if (!($dato["log"] == 1 || $dato["log"] == 2)) {
+      $this->load->view('headers/header');
+      $this->load->view('formulario1.php');
+      
+    } else header("Location: ". base_url()); # Si la sesion esta activa no puedes acceder al registro
+  }
+  
 }
 ?>

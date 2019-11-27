@@ -16,12 +16,16 @@ class LoginAjax extends CI_Controller {
         if (isset($result)) { # Si trajo una fila de la base de datos entonces...
             $nombre = $result->nombre;
             $email = $result->email;
+            $carrera=$result->carrera;
+            $interes=$result->interes;
             $respAX["title"] = "<h4 class='text-info text-success'>¡Bienvenid&commat;!:</h4>";
             $dato = ($result->privilegio == 0)?1:2;
             $s = array( # Son los datos que se meteran a la sesion
-                'priv' => $email,
+                'mail' => $email,
                 'nombre' => $nombre,
-                'login' => $dato
+                'login' => $dato,
+                'carrera' => $carrera,
+                'interes' =>$interes
             );
             $this->session->set_userdata($s); # Mandamos el array a la variable sesion para cargar los datos
             if ($result->privilegio == 1) { # Si es administrador entonces..

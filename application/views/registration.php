@@ -25,9 +25,153 @@
                         </label>
                     </div>
                     <div class="form-group"><label for="date">Fecha de Nacimiento</label><input class="form-control item" type="date" id="date" name="date" data-validetta="required"></div>
-                    <input type="submit" id="register-submit" name="register-submit" class="btn btn-primary btn-block" type="submit" value="Registrarme">
-                </form>
+                    
+                
             </div>
+    
+            <div id="container1" class="container">
+            <h1 id="tf" align="left" style="color: black">Ingresa tu carrera</h1> <br>
+            <div class="form-group form-check">
+            <div class="row">
+                    <div  class="col">
+                    <input name="carrera" type="radio" value="Ing. Aeronautica" class="form-check-input" checked>Ing. Aeronautica</input>
+                    </div>
+                    <div  class="col">
+                    <input  name="carrera" type="radio" value="Ing. Arquitectura" class="form-check-input">Ing. Arquitectura</input>
+                    </div>
+                    <div class="col"> 
+                    <input name="carrera" type="radio" value="Ing. Bionica" class="form-check-input">Ing. Bionica</input>
+                    </div>
+                    <div class="col">
+                    <input  name="carrera" type="radio" value="Ing. Bioquimica" class="form-check-input">Ing. Bioquimica</input>
+                    </div>
+                    <br><br>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                    <input  name="carrera" type="radio" value="Ing. Comunicaciones y Electronica" class="btn btn-outline-info">Ing. Com. y El</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input  name="carrera" type="radio" value="Ing. en Computación" class="btn btn-outline-info">Ing. en Computación</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input  name="carrera" type="radio" value="Ing. en control y automatización" class="btn btn-outline-info">Ing. en control y auto.</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input  name="carrera" type="radio" value="Ing. Civil" class="btn btn-outline-info">Ing. Civil</input>
+                    </div>
+                    <br><br>
+
+                </div>
+                <div class="row">
+                    <div  class="col-6 col-md-3">
+                    <input   name="carrera" type="radio" value="Ing. Electrica" class="form-check-input">Ing. Electrica</input>
+                    </div>
+                    <div  class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Farmaceutica" class="form-check-input">Ing. Farmaceutica</input>
+                    </div>
+                    <div class="col-6 col-md-3"> 
+                    <input name="carrera" type="radio" value="Ing. Industrial" class="form-check-input">Ing. Industrial</input>
+                    </div>
+                    <div class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. en Informatica" class="form-check-input">Ing. en Informatica</input>
+                    </div>
+                    <br><br>
+                </div>
+             <div class="row">
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Matemática" class="btn btn-outline-info">Ing. Matemática</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Mecánica" class="btn btn-outline-info">Ing. Mecánica</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Meatrónica" class="btn btn-outline-info">Ing. Meatrónica</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Metalurgia" class="btn btn-outline-info">Ing. Metalurgia</input>
+                    </div>
+                    <br><br>
+
+                </div>
+                <div class="row">
+                    <div  class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Petrolera"  class="form-check-input">Ing. Petrolera</input>
+                    </div>
+                    <div  class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Quimica" class="form-check-input">Ing. Quimica</input>
+                    </div>
+                    <div class="col-6 col-md-3"> 
+                    <input name="carrera" type="radio" value="Ing. Quimica y petrolera" class="form-check-input">Ing. Quim. Petr.</input>
+                    </div>
+                    <div class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Robotica Industrial" class="form-check-input">Ing. Robot/Ind</input>
+                    </div>
+                    <br><br>
+                </div>
+             <div class="row">
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. en Sistemas Automotrices" class="btn btn-outline-info">ISiSA</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. en sistemas computacionales" class="btn btn-outline-info" >ISC</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio"value="Ing. Telematica"  class="btn btn-outline-info">Ing. Telematica</input>
+                    </div>
+                    <div class="col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Textil" class="btn btn-outline-info">Ing. Textil</input>
+                    </div>
+                    <br><br>
+
+                </div>
+                <div class="row">
+                    <div  class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Transporte" class="form-check-input">Ing. Transporte</input>
+                    </div>
+                    <div  class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Ambiental" class="form-check-input">Ing. Ambiental</input>
+                    </div>
+                    <div class="col-6 col-md-3"> 
+                    <input name="carrera" type="radio" value="Ing. Alimentos" class="form-check-input">Ing. en Alimentos</input>
+                    </div>
+                    <div class="col-6 col-md-3">
+                    <input name="carrera" type="radio" value="Ing. Biotecnologia" class="form-check-input">Ing. Biotecnologia</input>
+                    </div>
+            
+                </div> <br><br>
+             
+        </div>
+        <h2 id="tf" align="left" style="color: black">Ingresa el area que más te interese</h2> <br>
+        <div class="container" align="center">
+        <div class="form-group form-check">
+                        <input class="form-check-input" type="radio" id="gender" name="interes" value="Manufactureras" checked>
+                        <label class="form-check-label" for="gender">
+                            Manufactureras
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="radio" id="gender2" name="interes" value="Servicios">
+                        <label class="form-check-label" for="gender2">
+                            Servicios
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="radio" id="gender2" name="interes" value="Mercado">
+                        <label class="form-check-label" for="gender2">
+                            Mercado
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input class="form-check-input" type="radio" id="gender2" name="interes" value="Tecnologia">
+                        <label class="form-check-label" for="gender2">
+                            Tecnologia
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Registrar</button> 
+        </div>
+        </form>
           </section>
 
 </main>
@@ -54,7 +198,7 @@
                             type:tipoAlerts[AX.val],
                             onDestroy:function(){
                                 if (AX.val == 1) {
-                                    window.location.replace("<?php base_url()?>login");
+                                    window.location.replace("<?=base_url()?>login");
                                 } else {
                                     $('#formRegistro')[0].reset();
                                 }

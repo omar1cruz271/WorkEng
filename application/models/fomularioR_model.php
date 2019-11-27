@@ -6,7 +6,7 @@
             $this->load->database();
         }
 
-        public function registrarUsuario($data) {
+        public function registrarCarrera($data) {
             $sql = "SELECT * FROM usuario WHERE email = ?";
             $this->db->query($sql,$data['email']);
             if($this->db->affected_rows() == 1) {
@@ -20,9 +20,7 @@
                         'celular' => $data['celular'],
                         'genero' => $data['genero'],
                         'fechaNac' => $data['fecha'],
-                        'privilegio' => 0,
-                        'carrera' => $data['carrera'],
-                        'interes' => $data["interes"]
+                        'privilegio' => 0
                 ));
                 if ($this->db->affected_rows() == 1) {
                     return TRUE;

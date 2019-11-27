@@ -3,21 +3,18 @@
 class RegistroAjax extends CI_Controller {
     function __construct() {
         parent::__construct();
-        $this->load->model('formularios_model');
+        $this->load->model('formularioR_model');
     }
     public function index() {
         $respAX = array();
-        $data = array(
-            'nombre' => trim($_POST["name"]),
-            'contrasena' => trim($_POST["password"]),
-            'email' => trim($_POST["email"]),
-            'celular' => trim($_POST["mobile"]),
-            'genero' => trim($_POST["gender"]),
-            'fecha' => trim($_POST["date"]),
-            'carrera'=> trim($_POST["carrera"]),
-            'interes'=> trim($_POST["interes"])
-        );
-        $er = $this->formularios_model->registrarUsuario($data);
+        if($_POST["carrera"]!= NULL){
+        $data = array('carrera' => trim($_POST["carrera"]));
+        $er = $this->formularioR_model->registrarCarrera($data);
+        }
+        if($_POST["interes"]!= NULL){
+        $data = array('interes' => trim($_POST["interes"]));
+        $er = $this->formularioR_model->registrarInteres($data);
+        }
         if ($er) {
             $respAX["val"] = 1;
             $respAX["msj"] = "<h5 class='text-info text-dark'>¡Registro Exitoso!</h5>";
