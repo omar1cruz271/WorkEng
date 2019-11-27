@@ -12,7 +12,7 @@
                     <div class="form-group"><label for="password">Contrase&ntilde;a</label><input class="form-control item" type="password" id="password" name="password" data-validetta="required,minLength[5],maxLength[32]"></div>
                     <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" placeholder="ejemplo@dominio.com" id="email" name="email" data-validetta="required,email,maxLength[32]"></div>
                     <div class="form-group"><label for="mobile">M&oacute;vil</label><input class="form-control item" type="tel" id="mobile" name="mobile" data-validetta="required,number,minLength[10],maxLength[10]"></div>
-                    <div class="form-group"><label for="mobile">Direcci</label><input class="form-control item" type="tel" id="mobile" name="mobile" data-validetta="required,number,minLength[10],maxLength[10]"></div>
+                    <div class="form-group"><label for="mobile">Dirección </label><input class="form-control item" type="tel" id="mobile" name="mobile" data-validetta="required,number,minLength[10],maxLength[10]"></div>
                     <div class="form-group"><label for="gender">Giro:</label></div>
                     <div class="form-group form-check">
                         <input class="form-check-input" type="radio" id="gender" name="gender" value="m" checked>
