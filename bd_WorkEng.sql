@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2019 a las 07:36:34
--- Versión del servidor: 10.4.8-MariaDB
--- Versión de PHP: 7.3.10
+-- Tiempo de generación: 27-11-2019 a las 19:26:00
+-- Versión del servidor: 10.4.6-MariaDB
+-- Versión de PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `bd_postal`
+-- Base de datos: `bd_workeng`
 --
 
 -- --------------------------------------------------------
@@ -55,6 +55,24 @@ INSERT INTO `categoria` (`idCategoria`, `nombre`, `rating`) VALUES
 (3, 'Amor', 0),
 (4, 'Saludos', 0),
 (5, 'Invitación', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empresas`
+--
+
+CREATE TABLE `empresas` (
+  `ID` int(50) NOT NULL,
+  `Nombre` varchar(50) NOT NULL,
+  `cif` varchar(50) NOT NULL,
+  `Contraseña` varchar(10) NOT NULL,
+  `Correo` varchar(50) NOT NULL,
+  `Movil` int(10) NOT NULL,
+  `Direccion` varchar(50) NOT NULL,
+  `Giro` varchar(20) NOT NULL,
+  `privilegio` int(2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -120,6 +138,21 @@ CREATE TABLE `reporte` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `solicitudes`
+--
+
+CREATE TABLE `solicitudes` (
+  `ID` int(11) NOT NULL,
+  `Nombre` varchar(20) NOT NULL,
+  `Empresa` varchar(20) NOT NULL,
+  `Correo` varchar(25) NOT NULL,
+  `CV` varchar(50) NOT NULL,
+  `Estado` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `usuario`
 --
 
@@ -131,17 +164,27 @@ CREATE TABLE `usuario` (
   `celular` varchar(10) NOT NULL,
   `genero` char(1) NOT NULL,
   `fechaNac` date NOT NULL,
-  `privilegio` int(1) NOT NULL DEFAULT 0
+  `privilegio` int(1) NOT NULL DEFAULT 0,
+  `carrera` varchar(50) DEFAULT NULL,
+  `interes` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idUsuario`, `nombre`, `contrasena`, `email`, `celular`, `genero`, `fechaNac`, `privilegio`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'RRekon@hotmail.com', '5579101570', 'M', '1998-04-24', 1),
-(2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'rodrigoreal9@gmail.com', '5529857787', 'm', '1998-08-22', 1),
-(5, 'Adrián García Real', '21232f297a57a5a743894a0e4a801fc3', 'an.real@gmail.com', '5529857787', 'm', '2019-11-19', 0);
+INSERT INTO `usuario` (`idUsuario`, `nombre`, `contrasena`, `email`, `celular`, `genero`, `fechaNac`, `privilegio`, `carrera`, `interes`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'RRekon@hotmail.com', '5579101570', 'M', '1998-04-24', 1, NULL, NULL),
+(2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'rodrigoreal9@gmail.com', '5529857787', 'm', '1998-08-22', 1, NULL, NULL),
+(5, 'Adrián García Real', '21232f297a57a5a743894a0e4a801fc3', 'an.real@gmail.com', '5529857787', 'm', '2019-11-19', 0, NULL, NULL),
+(6, 'Omar Cruz', '21232f297a57a5a743894a0e4a801fc3', 'omar1cruz271@gmail.com', '5577862650', 'm', '1998-12-11', 0, '', NULL),
+(7, 'Danae GCs', '21232f297a57a5a743894a0e4a801fc3', 'dana@gmail.com', '5577862650', 'm', '2001-03-11', 0, 'ingenieria aeronautica', 'manufactura'),
+(8, 'Omarsito', '21232f297a57a5a743894a0e4a801fc3', 'omar1@gmail.com', '5577862650', 'm', '1998-11-18', 0, 'Ing. en sistemas computacionales', 'manufactura'),
+(9, 'Alfonso Espinoza', '21232f297a57a5a743894a0e4a801fc3', 'poncho@gmail.com', '5577862650', 'm', '1998-11-18', 0, 'Ing. Quimica', 'Manufactureras'),
+(10, 'Leo Gomez', '21232f297a57a5a743894a0e4a801fc3', 'Lgomez@gmail.com', '5577862650', 'm', '1998-11-09', 0, 'Ing. Farmaceutica', 'Mercado'),
+(11, 'Sandra Calderon', '21232f297a57a5a743894a0e4a801fc3', 'sandy@gmail.com', '5577862650', 'f', '1996-11-17', 0, 'Ing. en Informatica', 'Tecnologia'),
+(12, 'Karen Cruz', '21232f297a57a5a743894a0e4a801fc3', 'karen@gmail.com', '5556565454', 'f', '1999-07-14', 0, 'Ing. en sistemas computacionales', 'Tecnologia'),
+(13, 'Omar Cruz Flores', '21232f297a57a5a743894a0e4a801fc3', 'google@gmail.com', '5577862650', 'm', '2345-03-12', 0, '', '');
 
 -- --------------------------------------------------------
 
@@ -174,6 +217,12 @@ ALTER TABLE `categoria`
   ADD PRIMARY KEY (`idCategoria`);
 
 --
+-- Indices de la tabla `empresas`
+--
+ALTER TABLE `empresas`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indices de la tabla `postal`
 --
 ALTER TABLE `postal`
@@ -185,6 +234,12 @@ ALTER TABLE `postal`
 --
 ALTER TABLE `reporte`
   ADD PRIMARY KEY (`idReporte`);
+
+--
+-- Indices de la tabla `solicitudes`
+--
+ALTER TABLE `solicitudes`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indices de la tabla `usuario`
@@ -211,6 +266,12 @@ ALTER TABLE `categoria`
   MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT de la tabla `empresas`
+--
+ALTER TABLE `empresas`
+  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `postal`
 --
 ALTER TABLE `postal`
@@ -223,10 +284,16 @@ ALTER TABLE `reporte`
   MODIFY `idReporte` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `solicitudes`
+--
+ALTER TABLE `solicitudes`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Restricciones para tablas volcadas
