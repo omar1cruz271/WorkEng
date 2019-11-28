@@ -12,34 +12,16 @@
     <p class="lead">Esta información será vista por las empresas, así que pocura ser claro, conciso y colocar solo información veridica (comprobable)</p>
 
     <p> Adjuntar archivo <input type='file' name='archivo1' id='archivo1' placeholder="Adjuntar archivo"> </p> 
-	<p class="submit"> <button type="regist1" > ENVIAR </button> </p> 
+	<p class="submit"> <button type="regist1" class="btn btn-outline-light btn-lg" > ENVIAR </button> </p> 
   </div>
 
   <div style="color: white" class="row marketing">
     <div class="col-lg-6">
-      <h4>Subheading</h4>
-      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-      <h4>Subheading</h4>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-      <h4>Subheading</h4>
-      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    </div>
-
-    <div class="col-lg-6">
-      <h4>Subheading</h4>
-      <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-      <h4>Subheading</h4>
-      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-      <h4>Subheading</h4>
-      <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-    </div>
-  </div>
-
-
+      <h4>Esperando empresas</h4>
+      <p>Las empresas se pondran en contacto</p>
+    
+</div></div>
+</div>
 
 </div> <!-- /container -->
 

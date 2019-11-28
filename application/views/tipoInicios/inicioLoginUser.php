@@ -7,7 +7,7 @@
                 <i><h1>¡BIENVENIDO!</h1></i>
             </br>
             <p>Encuentra las ofertas de trabajo más cercanas a tu localidad.</p>
-            <form action="POST"><button class="btn btn-outline-light btn-lg" type="button"  onclick=" location.href='<?php base_url(); ?>login'">Empieza ahora</button></div>
+            <form action="POST"><button class="btn btn-outline-light btn-lg" type="button"  onclick=" location.href='<?php base_url();?>postales'">Empieza ahora</button></div>
             </form>
         </section>
     
