@@ -3,14 +3,16 @@
 <div class="container">
   <div class="header clearfix">
   
-    <h3 align="center" class="text-muted">INTERESES: <?php echo($interes)?></h3>
+    <h3 align="center" class="text-muted"> INTERESES: <?php echo($interes)?></h3>
   </div>
 
   <div class="jumbotron">
-    <h1><?php echo($nombre)?></h1> <h5><?php echo($carrera)?></h5> <br><br>
+    <h1 align="center"><?php echo($nombre)?></h1> <h5><?php Carrera: echo($carrera)?></h5> <br><br>
     <h1>Curriculum vitae</h1>
     <p class="lead">Esta información será vista por las empresas, así que pocura ser claro, conciso y colocar solo información veridica (comprobable)</p>
-    <p><a class="btn btn-lg btn-success" href="#" role="button">Añadir CV</a></p>
+
+    <p> Adjuntar archivo <input type='file' name='archivo1' id='archivo1' placeholder="Adjuntar archivo"> </p> 
+	<p class="submit"> <button type="regist1" > ENVIAR </button> </p> 
   </div>
 
   <div style="color: white" class="row marketing">

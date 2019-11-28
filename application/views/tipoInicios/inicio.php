@@ -2,7 +2,7 @@
 
 <main class="page landing-page">
     
-    <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/tech/image1.jpg&quot;);color:rgba(0,0,0,.6);">
+    <section class="clean-block clean-hero" style="background-image:url(&quot;assets/img/image7.jpg&quot;);color:rgba(0,0,0,.6);">
         <div class="text">
             <br>
                 <i><h1>¡BIENVENIDO!</h1></i>
