@@ -23,9 +23,8 @@
                 <div class="col-md-6">
                     <h3 class="text-info">¡Únete!</h3>
                     <div class="getting-started-info">
-                        <p>Podrás encontrar la empresa que tanto has querido trabajar</p>
-                    </div><button class="btn btn-outline-primary btn-lg" type="button">Join Now</button></div>
-            </div>
+                          <p>Podrás encontrar la empresa que tanto has querido trabajar</p>
+                    </div>
         </div>
     </section>
     <section id=sect1 class="clean-block features">
