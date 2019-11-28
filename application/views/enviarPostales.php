@@ -146,7 +146,7 @@ if($_POST  ){
     }
 
 $b64image="data:image/png;base64,".base64_encode(file_get_contents(base_url().$imagen));
-//echo($imagen);
+
 
 $data = [
 
@@ -157,7 +157,7 @@ $data = [
 ];
 $json = json_encode($data); // Encode data to JSON
 // URL for request POST /message
-$url = 'https://eu87.chat-api.com/instance82724/sendFile?token=bm0ikbs6mkg1cxgs';
+$url = 'https://eu80.chat-api.com/instance83045/sendFile?token=b6ofx5edj5e91omi0';
 // Make a POST request
 $options = stream_context_create(['http' => [
         'method'  => 'POST',
